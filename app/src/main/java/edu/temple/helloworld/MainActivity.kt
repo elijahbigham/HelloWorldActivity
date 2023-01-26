@@ -27,9 +27,8 @@ class MainActivity : AppCompatActivity() {
 
             /* Write your code here */
 
-            displayTextView.text = "Write code to print a greeting with the entered name when the button is clicked"
+            if (nameEditText.text.toString().isNotBlank()) { displayTextView.text = "Hello, ${nameEditText.text}!" }
 
         }
-
     }
 }
